@@ -8,7 +8,7 @@ let server = http.createServer((req, res) => {
     //     res.end('aiwoqu 求你了！！！！！')
     // }
     console.log('receive webhook request')
-    if(req.url === '/webhook'){
+    if(req.url === '/webhook/receive'){
         // res.setHeader('Content-Type','application/json')
         console.log('return is ok')
         res.end(JSON.stringify({ok:true}))
